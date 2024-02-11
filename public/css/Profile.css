@@ -1,0 +1,60 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+}
+
+
+main {
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info,
+.edit-profile {
+    width: 45%;
+    padding: 15px;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.edit-profile {
+    text-align: center;
+}
+
+.edit-profile form {
+    margin-top: 10px;
+}
+
+.favorites-container,
+.playlists-container,
+.downloads-container,
+.uploads-container {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.song-card {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--accent-blueish);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

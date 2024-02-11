@@ -1,0 +1,75 @@
+/* styles.css */
+
+
+header {
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.welcome-message {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 350px;
+    height: 25px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: var(--accent-blueish);
+    color: var(--text-color-light);
+    width: 60px;
+    height: 35px;
+    border-radius: 0 20px 20px 0;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #00258a; 
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-actions a {
+    background-color: var(--accent-blueish);
+    color: var(--text-color-light);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.user-actions button:hover, .user-actions a:hover {
+    background-color: #002ca6; /* Darker shade for hover effect */
+}

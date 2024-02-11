@@ -1,0 +1,50 @@
+/* Add this to your CSS stylesheet */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+}
+
+.upload-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: var(--secondary-bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+h2 {
+    color: var(--accent-blueish);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: var(--accent-blueish);
+}
+
+input,
+button {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+}
+
+button {
+    background-color: var(--accent-blueish);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-pinkish);
+}

@@ -1,0 +1,86 @@
+/* sidebar.css */
+
+
+
+.sidebar {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 32px;
+    color: var(--text-color-light);
+}
+
+.sidebar-navigation {
+    flex-grow: 1;
+}
+
+.sidebar-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-navigation li {
+    margin-bottom: 25px;
+}
+
+.sidebar-navigation a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-navigation a:hover {
+    color: var(--accent-blueish);
+}
+
+.sidebar-navigation i {
+    margin-right: 15px;
+}
+
+.sign {
+
+    margin-top: auto;
+}
+
+.sign a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.sign i {
+    margin-right: 15px;
+}
+
