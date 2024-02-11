@@ -1,9 +1,8 @@
 /* styles.css */
 
-
 body {
     background-color: var(--primary-bg-color);
-    color: var(--text-color-light);
+    color: var(--primary-text-color);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,17 +14,37 @@ section {
 
 .banner {
     position: relative;
-    height: 300px;
-    background: url('/public/images/artist_images/img1.jpg') center/cover no-repeat;
+    height: 250px;
+    width: 70%;
+    margin: 10px;
+    border-radius: 15px;
+    background: url('/public/images/app_images/no\ music.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color-light);
+    color: #ffffff;
     text-align: center;
 }
 
-.banner-content {
-    z-index: 1;
+.banner-slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
 }
 
 .subscribe-button {
@@ -33,27 +52,64 @@ section {
     padding: 10px 20px;
     font-size: 16px;
     background-color: var(--accent-blueish);
-    color: var(--text-color-light);
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
 }
 
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.genre-cards {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.genre-cards h2 {
+    color: var(--accent-blueish);
+}
+
+.genre-card {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.genre-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.genre-card p {
+    margin-top: 5px;
+    text-align: center;
+}
+
 .home-section {
     padding: 20px;
     background-color: var(--secondary-bg-color);
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: var(--accent-blueish);
 }
 
-.song-cards-container,
-.artist-cards-container,
-.playlist-cards-container,
-.genre-cards-container {
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -65,19 +121,46 @@ h2 {
 .genre-card {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
-    background-color: var(--primary-bg-color);
+    background-color: #34495e;
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    position: relative;
+}
+
+.song-card img,
+.artist-card img,
+.playlist-card img,
+.genre-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bdc3c7;
 }
 
 a {
-    color: var(--accent-blueish);
+    color: #3498db;
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
 }
 
 a:hover {
-    color: var(--accent-pinkish);
+    color: #2980b9;
 }

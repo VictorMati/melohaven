@@ -7,15 +7,26 @@
     </div>
 
     <nav class="sidebar-navigation">
-        <ul>
-            <li><a href="?page=home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="?page=search"><i class="fas fa-search"></i> Genre</a></li>
-            <li><a href="?page=profile"><i class="fas fa-user"></i> Profile</a></li>
-            <li><a href="?page=favorites"><i class="fas fa-heart"></i> Favorites</a></li>
-            <li><a href="?page=playlist"><i class="fas fa-list"></i> Playlists</a></li>
-            <li><a href="?page=upload"><i class="fas fa-user"></i> Upload</a></li>
-            <!-- Add more navigation links as needed -->
-        </ul>
+        <div class="section">
+            <h3>Browse Music</h3>
+            <ul>
+                <li><a href="?page=home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="?page=explore"><i class="fas fa-compass"></i> Explore</a></li>
+                <li><a href="?page=genres"><i class="fas fa-music"></i> Genres</a></li>
+                <li><a href="?page=artists"><i class="fas fa-users"></i> Artists</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h3>My Library</h3>
+            <ul>
+                <li><a href="?page=recently_played"><i class="fas fa-history"></i> Recently Played</a></li>
+                <li><a href="?page=favorites"><i class="fas fa-heart"></i> Favorite Songs</a></li>
+                <li><a href="?page=playlists"><i class="fas fa-list"></i> Playlists</a></li>
+            </ul>
+        </div>
+
+        <!-- Add more navigation links as needed -->
     </nav>
 
     <?php if (isset($_SESSION['user_id'])) : ?>
@@ -27,5 +38,5 @@
             <a href="?page=login"><i class="fas fa-sign-in-alt"></i> Login</a>
         </div>
     <?php endif; ?>
-
 </aside>
+

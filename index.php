@@ -21,15 +21,15 @@
 </head>
 
 <body>
-
    <main>
+
     <div class="sidebar-container">
-    <?php include("../melohaven/app/views/components/Sidebar.php"); ?>
+        <?php include("../melohaven/app/views/components/Sidebar.php"); ?>
     </div>
 
     <div class="main-container">
         <header>
-        <?php include("../melohaven/app/Views/components/Header.php"); ?>
+            <?php include("../melohaven/app/Views/components/Header.php"); ?>
         </header>
 
         <?php
@@ -44,14 +44,11 @@
                 // Handle 404 or redirect to a default page
                 include 'pages/404.php';
             }
-            ?>
-        
-        <footer>
-        <?php include("../melohaven/app/Views/song/PlayerView.php"); ?>
-        </footer>
+        ?>
     </div>
 </main>
-
+    <footer>
+        <?php include("../melohaven/app/Views/components/Player.php"); ?>
+    </footer>
 </body>
-
 </html>
