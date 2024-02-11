@@ -1,12 +1,12 @@
 /* variables.css */
 
 :root {
-    --primary-bg-color: #333; /* Dark background color */
-    --secondary-bg-color: #444;
+    --primary-bg-color: #131c24; /* Dark background color */
+    --secondary-bg-color: #11293c;
     --accent-blueish: #0097fb; /* Blueish accent color */
     --accent-pinkish: #e74c3c; /* Pinkish accent color */
-    --text-color-light: #fff; /* Light text color for dark backgrounds */
-    --secondary-text-color: #ccc;
+    --primary-text-color: #f0f5f6; /* Light text color for dark backgrounds */
+    --secondary-text-color: #c7cccf;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Generic box shadow */
 }
 

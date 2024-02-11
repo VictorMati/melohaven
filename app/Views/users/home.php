@@ -20,7 +20,7 @@ require_once("C:\Users\hp\Documents\Web Development\Projects\melohaven\app\contr
     <div class="banner-slider">
         <!-- Slides for the sliding banner -->
         <div class="slide">
-            <img src="/public/images/banner_images/slide1.jpg" alt="Banner Image">
+            <img src="/public/images/banner_images/slide 1.jpg" alt="Banner Image">
             <div class="slide-content">
                 <h1>Welcome to MeloHaven</h1>
                 <p>Discover, Enjoy, and Share Your Favorite Music</p>
@@ -37,6 +37,18 @@ require_once("C:\Users\hp\Documents\Web Development\Projects\melohaven\app\contr
     <!-- Genre cards section to the right of the banner -->
     <div class="genre-cards">
         <h2>Explore Genres</h2>
+        <div class="genre-card" onclick="window.location.href='?page=genre_specific&genre=rock'">
+            <img src="/public/images/genre_images/rock.jpg" alt="Rock Genre">
+            <p>Rock</p>
+        </div>
+        <div class="genre-card" onclick="window.location.href='?page=genre_specific&genre=rock'">
+            <img src="/public/images/genre_images/rock.jpg" alt="Rock Genre">
+            <p>Rock</p>
+        </div>
+        <div class="genre-card" onclick="window.location.href='?page=genre_specific&genre=rock'">
+            <img src="/public/images/genre_images/rock.jpg" alt="Rock Genre">
+            <p>Rock</p>
+        </div>
         <div class="genre-card" onclick="window.location.href='?page=genre_specific&genre=rock'">
             <img src="/public/images/genre_images/rock.jpg" alt="Rock Genre">
             <p>Rock</p>

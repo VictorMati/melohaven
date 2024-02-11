@@ -1,8 +1,8 @@
 /* styles.css */
 
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,8 +14,11 @@ section {
 
 .banner {
     position: relative;
-    height: 300px;
-    background: url('/public/images/banner_images/slide1.jpg') center/cover no-repeat;
+    height: 250px;
+    width: 70%;
+    margin: 10px;
+    border-radius: 15px;
+    background: url('/public/images/app_images/no\ music.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +51,7 @@ section {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3498db;
+    background-color: var(--accent-blueish);
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -72,12 +75,12 @@ section {
 }
 
 .genre-cards {
-    width: 20%;
+    width: 30%;
     margin-left: 20px;
 }
 
 .genre-cards h2 {
-    color: #3498db;
+    color: var(--accent-blueish);
 }
 
 .genre-card {
@@ -97,13 +100,13 @@ section {
 
 .home-section {
     padding: 20px;
-    background-color: #2c3e50;
-    border-radius: 5px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #3498db;
+    color: var(--accent-blueish);
 }
 
 .cards-container {
